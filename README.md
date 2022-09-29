@@ -1,5 +1,4 @@
-## Programming best practices
-### according to Austin Milt
+# Programming best practices (according to me)
 
 This documents my approach to programming and software engineering more generally.
 
