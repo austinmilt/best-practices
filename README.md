@@ -24,10 +24,7 @@ If you see something you disagree with or would like to add, feel free to open a
 <a name="patterns"></a>
 ## Code Patterns
 
-<details>
-<summary>Private first</summary>
-Aim to keep every function, every variable, every interface as minimally exposed as possible. When you feel the need to expose a function, variable, or interface, first ask yourself if it is general enough that it may need to be used in many places, or if there's a more narrowly-defined construct that can be placed in a shared location. Minimally exposed code reduces the amount of scrubbing through options when writing new code throughout the codebase, allows you to define simpler interfaces, and reduces the chances of using the wrong code for a problem.
-</details>
+**Private first.** Aim to keep every function, every variable, every interface as minimally exposed as possible. When you feel the need to expose a function, variable, or interface, first ask yourself if it is general enough that it may need to be used in many places, or if there's a more narrowly-defined construct that can be placed in a shared location. Minimally exposed code reduces the amount of scrubbing through options when writing new code throughout the codebase, allows you to define simpler interfaces, and reduces the chances of using the wrong code for a problem.
 
 **Write interfaces from the perspective of the user.** When you make a new function, interface, or variable, consider how it will appear to a caller/user who has no idea of its internals. This means minimizing required inputs to functions, narrowly-defining the scope, using clear names, and documenting usage and behavior.
 
