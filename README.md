@@ -32,13 +32,13 @@ If you see something you disagree with or would like to add, feel free to open a
 
 **Be internally consistent and externally agnostic.** Data retrieved from remote sources, the sources themselves, and the method for retrieving those data may all change. The internals of your software shouldnt suffer, leading you to large refactors. Instead, remote API calls should be as isolated as possible into their own clients, and data fetched from those locations should be transformed into the format you want internally, as soon as possible. This decouples your data from external APIs and saves on refactoring.
 
-**for readability in PRs and outsiders not using an IDE: declare types on the left side always, and on the right side when necessary.** TBD
+- **for readability in PRs and outsiders not using an IDE: declare types on the left side always, and on the right side when necessary.** TBD
 
-**dont use esoteric language features unless absolutely necessary. Prioritize readability over convenience.** TBD
+- **dont use esoteric language features unless absolutely necessary. Prioritize readability over convenience.** TBD
 
-**code formatters are good, but they can be too aggressive with line breaks... we should do something about that... probably just set the line break limit to a very large value** TBD
+- **code formatters are good, but they can be too aggressive with line breaks... we should do something about that... probably just set the line break limit to a very large value** TBD
 
-**minimize returns** TBD
+- **minimize returns** TBD
 
 <a name="documentation"></a>
 ## Code Documentation
@@ -73,7 +73,7 @@ Good tests serve many purposes. They inspire confidence. They provide examples o
 
 **ITs over UTs, but ideally both.** The most important tests are those that synthesize the many parts of the software at a high level (ITs), reflecting the way the software will be used and the users' expectations of its behavior. If you do a good job writing your interfaces this will happen automatically. At the same time, writing thorough UTs also reduces the chances your ITs will fail for mysterious reasons.
 
-**test logic, not markup.** TBD
+- **test logic, not markup.** TBD
 
 <a name="pipeline"></a>
 ## Development Pipeline
